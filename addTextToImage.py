@@ -1,7 +1,5 @@
 
 # Importing the PIL library
-from cgitb import small
-from turtle import pos, position, st
 from PIL import Image
 from PIL import ImageDraw, ImageFont
 import time
