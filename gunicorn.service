@@ -5,9 +5,9 @@ After=network.target
 [Service]
 User=user
 Group=user
-WorkingDirectory=/home/user/fastapi
-Environment="PATH=/home/user/fastapi/env/bin"
-ExecStart=//home/user/fastapi/env/bin/gunicorn --config /home/user/fastapi/gunicorn.py main:app
+WorkingDirectory=/home/user/pythonApi
+Environment="PATH=/home/user/pythonApi/env/bin"
+ExecStart=/home/user/pythonApi/env/bin/gunicorn --config /home/user/pythonApi/gunicorn.py main:app
 
 [Install]
 WantedBy=multi-user.target

@@ -5,8 +5,8 @@ load_dotenv()
 
 name = "Gunicorn config for FastAPI - ckwebstudio.com"
 
-accesslog = "/home/user/fastapi/gunicorn-access.log"
-errorlog = "/home/user/fastapi/gunicorn-error.log"
+accesslog = "/home/user/pythonApi/gunicorn-access.log"
+errorlog = "/home/user/pythonApi/gunicorn-error.log"
 
 bind = "0.0.0.0:5000"
 
