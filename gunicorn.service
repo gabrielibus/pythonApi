@@ -1,0 +1,13 @@
+[Unit]
+Description=Service Systemd File to Run Gunicorn Web Server  - compufacilito
+After=network.target
+
+[Service]
+User=compufacilito
+Group=compufacilito
+WorkingDirectory=/home/compufacilito/pythonApi
+Environment="PATH=/home/compufacilito/pythonApi/env/bin"
+ExecStart=//home/compufacilito/pythonApi/env/bin/gunicorn --config /home/compufacilito/pythonApi/gunicorn.py main:app
+
+[Install]
+WantedBy=multi-user.target

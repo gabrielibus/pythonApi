@@ -1,5 +1,3 @@
-
-# Importing the PIL library
 from PIL import Image
 from PIL import ImageDraw, ImageFont
 import time
