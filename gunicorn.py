@@ -3,10 +3,10 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-name = "compufacilito gunicorn config"
+name = "Gunicorn config for FastAPI - ckwebstudio.com"
 
-accesslog = "/home/compufacilito/pythonApi/gunicorn-access.log"
-errorlog = "/home/compufacilito/pythonApi/gunicorn-error.log"
+accesslog = "/home/user/fastapi/gunicorn-access.log"
+errorlog = "/home/user/fastapi/gunicorn-error.log"
 
 bind = "0.0.0.0:5000"
 

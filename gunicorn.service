@@ -1,13 +1,13 @@
 [Unit]
-Description=Service Systemd File to Run Gunicorn Web Server  - compufacilito
+Description=Service Systemd File to Run Gunicorn Web Server  - ckwebstudio.com
 After=network.target
 
 [Service]
-User=root
-Group=
-WorkingDirectory=/home/compufacilito/pythonApi
-Environment="PATH=/home/compufacilito/pythonApi/env/bin"
-ExecStart=//home/compufacilito/pythonApi/env/bin/gunicorn --config /home/compufacilito/pythonApi/gunicorn.py main:app
+User=user
+Group=user
+WorkingDirectory=/home/user/fastapi
+Environment="PATH=/home/user/fastapi/env/bin"
+ExecStart=//home/user/fastapi/env/bin/gunicorn --config /home/user/fastapi/gunicorn.py main:app
 
 [Install]
 WantedBy=multi-user.target
